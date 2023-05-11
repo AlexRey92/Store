@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/itemProduct1"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/itemStars1"
+        android:layout_width="128dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/itemProduct1"
+        app:layout_constraintStart_toStartOf="@+id/itemProduct1"
+        app:layout_constraintTop_toBottomOf="@+id/itemProduct1"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/itemId1"
+        android:layout_width="11dp"
+        android:layout_height="13dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
